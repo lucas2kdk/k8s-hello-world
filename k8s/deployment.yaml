@@ -17,10 +17,10 @@ spec:
       containers:
       - name: hello-world
         # For local development:
-        image: k8s-hello-world:latest
-        imagePullPolicy: IfNotPresent
+        image: ghcr.io/lucas2kdk/k8s-hello-world:master-ec0c67e7ab2a28e3333418a9580f822265cf9ceb
+        imagePullPolicy: Always
         # For production with GHCR, use:
-        # image: ghcr.io/lucas2kdk/k8s-hello-world:latest
+        # image: ghcr.io/lucas2kdk/k8s-hello-world:master-ec0c67e7ab2a28e3333418a9580f822265cf9ceb
         # imagePullPolicy: Always
         ports:
         - containerPort: 8080
